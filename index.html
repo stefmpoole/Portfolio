@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      :root {
+        --primary-color: #6c63ff;
+        --secondary-color: #f5f2fe;
+        --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      body {
+        margin: 60px auto;
+        max-width: 800px;
+        display: block;
+      }
+
+      h1,
+      h2,
+      h3 {
+        text-align: center;
+        margin: 0 auto;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      h2 {
+        font-size: 48px;
+      }
+
+      h1 {
+        font-size: 96px;
+      }
+
+      h3 {
+        font-size: 24px;
+        opacity: 0.7;
+      }
+
+      .links a {
+        margin: 20px;
+        border-radius: 4px;
+        padding: 20px 15px;
+        text-decoration: none;
+        text-transform: capitalize;
+      }
+
+      .link {
+        display: flex;
+        justify-content: center;
+        margin: 40px 0px 0px;
+      }
+
+      .contact {
+        background: var(--primary-color);
+        box-shadow: var(--box-shadow);
+        color: white;
+      }
+
+      .about {
+        color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>👋🏼 Hi I am</h2>
+    <h1>Stefanie Poole</h1>
+    <h3>🏁Junior Front-end developer, based in USA</h3>
+    <div class="links">
+      <div class="link">
+        <a href="about.html#contact" class="contact">Contact Me</a>
+        <a href="about.html" class="about">About me</a>
+      </div>
+    </div>
+  </body>
+</html>
