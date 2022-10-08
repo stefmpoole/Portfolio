@@ -1,0 +1,146 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+html {
+  display: block;
+  margin: 0 auto;
+  max-width: 800 px;
+}
+
+@media (max-width: 600px) {
+  h1#h1 {
+    text-align: center;
+    font-size: 42px;
+  }
+
+  h2#h2 {
+    font-size: 32px;
+  }
+
+  h3#h3 {
+    font-size: 24px;
+    margin: 0;
+    display: block;
+  }
+
+  .navigation-links {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .about-link {
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  .app-link {
+    display: block;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #primary-image {
+    display: none;
+  }
+}
+
+#container-body {
+  margin-top: 100px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+}
+
+#h1 {
+  font-size: 96px;
+}
+
+#h2 {
+  font-size: 48px;
+}
+
+#h3 {
+  font-size: 24px;
+  opacity: 0.7;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links {
+  margin: 40px 0px 48px;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
+  display: flex;
+  margin: 30px 10px;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.app-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
