@@ -1,15 +1,25 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --heading-font-family: "PT Sans Narrow", sans-serif;
+  --primary-font-family: Arial, Helvetica, sans-serif;
+  --box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 html {
   max-width: 800 px;
 }
 
+body#body {
+  font-family: var(--primary-font-family);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font-family);
+}
+
 h1#h1 {
-  font-family: "PT Sans Narrow", sans-serif;
   font-size: 60px;
   font-variant: small-caps;
   font-weight: 100;
@@ -19,7 +29,6 @@ h2,
 h3 {
   text-align: center;
   margin: 0;
-  font-family: "PT Sans Narrow", sans-serif;
   font-weight: 800;
   font-variant: small-caps;
 }
@@ -27,7 +36,6 @@ h3 {
 h4#h4 {
   text-align: center;
   margin: 0;
-  font-family: "PT Sans Narrow", sans-serif;
   font-weight: 800;
 }
 
@@ -40,7 +48,7 @@ img#btn-img {
   padding: 10px 10px 21px 10px;
   border: 1px solid #bfbfbf;
   background-color: white;
-  box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: var(--box-shadow);
 }
 
 img#profile-image {
@@ -50,7 +58,7 @@ img#profile-image {
   padding: 10px 10px 35px 10px;
   border: 1px solid #bfbfbf;
   background-color: white;
-  box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: var(--box-shadow);
 }
 
 #container-body {
@@ -81,43 +89,15 @@ img#profile-image {
   text-transform: capitalize;
 }
 
-.contact-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-
-.about-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
-}
-
 .email-link {
   display: flex;
   justify-content: center;
-  color: var(--primary-color);
   font-size: 28px;
   text-decoration: none;
 }
 
 .email-link:hover {
   text-decoration: underline;
-}
-
-.app-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
 }
 
 @media (max-width: 800px) {
@@ -168,18 +148,6 @@ img#profile-image {
   .navigation-links {
     text-align: center;
     font-size: 16px;
-  }
-
-  .about-link {
-    text-align: center;
-    border-radius: 4px;
-  }
-
-  .app-link {
-    display: block;
-    text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 
   a.email-link {
