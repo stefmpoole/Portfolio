@@ -61,6 +61,10 @@ img#profile-image {
   box-shadow: var(--box-shadow);
 }
 
+#contact a:hover {
+  text-decoration: underline !important;
+}
+
 #container-body {
   margin: 30px;
 }
@@ -92,8 +96,9 @@ img#profile-image {
 .email-link {
   display: flex;
   justify-content: center;
-  font-size: 28px;
+  font-size: 38px !important;
   text-decoration: none;
+  color: black;
 }
 
 .email-link:hover {
